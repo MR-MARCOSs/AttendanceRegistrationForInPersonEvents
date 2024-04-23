@@ -1,0 +1,35 @@
+POST http://localhost:3333/events
+Content-Type: application/json
+
+
+{
+    "title": 123,
+    "details": null,
+    "maximumAttendees": 1    
+}
+
+###
+
+POST http://localhost:3333/events/8ae1d96d-89a9-43e7-b627-1352459177b7/attendees
+Content-Type: application/json
+
+{
+    "name":"Marcos Eduardo",
+    "email":"marcosdudu005@gmail.com" 
+}
+
+###
+
+GET http://localhost:3333/events/7c182b6f-ee78-4fd5-806d-d889ce85e8de
+
+###
+
+GET http://localhost:3333/attendees/4/badge
+
+###
+
+GET http://localhost:3333/attendees/3/check-in
+
+###
+
+GET http://localhost:3333/events/8ae1d96d-89a9-43e7-b627-1352459177b7/attendees?query=carlos
